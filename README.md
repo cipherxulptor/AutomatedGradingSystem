@@ -1,4 +1,4 @@
-# Grade Management System
+# Automated Grading System
 
 This project is a web application which manages the grades of different students. It performs CRUD (Create, read(view), update and delete) operations, calculates the
 grade (average grade, letter grade and overall class average) of every student, registers a user (student/professor role) and use Spring security to allow/restrict 
@@ -90,4 +90,5 @@ MIT License
 Copyright (c) 2020 Dev-Daljeet
 
 Refer to **LICENSE** file for full information.
+
 
