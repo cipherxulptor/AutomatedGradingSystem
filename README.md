@@ -1,94 +1,202 @@
-# Automated Grading System
+---
+library_name: peft
+base_model: codellama/CodeLlama-7b-hf
+---
 
-This project is a web application which manages the grades of different students. It performs CRUD (Create, read(view), update and delete) operations, calculates the
-grade (average grade, letter grade and overall class average) of every student, registers a user (student/professor role) and use Spring security to allow/restrict 
-the access of different URLs depending upon roles.
+# Model Card for Model ID
 
-My objective behind this project was to learn Spring Security and use database to load users and add users rather than hard coding the users in security config class.
-
-Programming language: Java
-
-Java Framework: Spring Boot
-
-Type: Maven
-
-Dependencies used: Spring Web, Thymeleaf, Lombok, Spring data JDBC, H2 database and Spring Security
-
-## Some sample screenshots of Project
-
-### Homepage As Professor
-![Screesshot of Homepage](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/homeProf.PNG?raw=true)
-
-### Homepage As Student
-![Screesshot of Homepage](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/homeStu.PNG?raw=true)
-
-### Homepage without login as user
-![Screesshot of Homepage](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/home.PNG?raw=true)
-
-### Login page
-![Screesshot of Homepage](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/login.PNG?raw=true)
-
-### Add page
-![Screesshot of add page](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/add.PNG?raw=true)
-
-### View As Professor page
-![Screesshot of viewAsProf 1 page](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/viewProf.PNG?raw=true)
-![Screesshot of viewAsProf 2 page](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/viewProfAvg.PNG?raw=true)
-
-### View As Student page
-![Screesshot of viewAsStu page](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/viewStu.PNG?raw=true)
-
-### Register page
-![Screesshot of register page](https://github.com/Dev-Daljeet/Screenshots/blob/master/GradeManagement/register.PNG?raw=true)
-
-## How the project (application) works:
-
-(**Note:** Anyone can register as professor by clicking on register button. For student, when professor adds a student, the student gets added into user relation in the database. Thus, the newly added student can login using his/her name as username and studentId as password.)
-
-### Professor (User with role Professor) can do following operations:
-- Add a student (name, studentId, Exercises, Assignment 1, Assignment 2, Assignment 3, Midterm, Final Exam)
-- View all students
-- View average grade of every students
-- View overall average of every section and overall average grade
-- Edit the properties of student (name, studentId, Exercises, Assignment 1, Assignment 2, Assignment 3, Midterm, Final Exam)
-- Delete the student
-
-### Student (User with role Student) can do following operations:
-- View his/her grade 
-- View his/her average grade and letter grade
-
-## Usage examples (How to use):
-[![GradeManagementSystem](http://img.youtube.com/vi/ZD-FepDhBe8/0.jpg)](http://www.youtube.com/watch?v=ZD-FepDhBe8 "GradeManagementSystem")
-
-## Run:
-### Prerequisites (Requirements):
-
-For building and running the application you need:
-
-- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [Maven 3](https://maven.apache.org)
-
-### Running the application with IDE
-
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.devdaljeet.grademanagementsystem.GradeManagementSystemApplication` class from your IDE (Eclipse).
-
-* 	Download the zip or clone the Git repository.
-* 	Unzip the zip file (if you downloaded one)
-* 	Open Command Prompt and Change directory (cd) to folder containing pom.xml
-* 	Open Eclipse
-	* File -> Import -> Existing Maven Project -> Navigate to the folder where you unzipped the zip
-	* Select the project
-* 	Choose the Spring Boot Application file (search for @SpringBootApplication)
-* 	Right Click on the file and Run as Java Application
-
-### Running the application with Maven
-
-Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
-
-# License
-MIT License
-Copyright (c) 2020 Dev-Daljeet
-
-Refer to **LICENSE** file for full information.
+<!-- Provide a quick summary of what the model is/does. -->
 
 
+
+## Model Details
+
+### Model Description
+
+<!-- Provide a longer summary of what this model is. -->
+
+
+
+- **Developed by:** [More Information Needed]
+- **Funded by [optional]:** [More Information Needed]
+- **Shared by [optional]:** [More Information Needed]
+- **Model type:** [More Information Needed]
+- **Language(s) (NLP):** [More Information Needed]
+- **License:** [More Information Needed]
+- **Finetuned from model [optional]:** [More Information Needed]
+
+### Model Sources [optional]
+
+<!-- Provide the basic links for the model. -->
+
+- **Repository:** [More Information Needed]
+- **Paper [optional]:** [More Information Needed]
+- **Demo [optional]:** [More Information Needed]
+
+## Uses
+
+<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+
+### Direct Use
+
+<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+
+[More Information Needed]
+
+### Downstream Use [optional]
+
+<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
+
+[More Information Needed]
+
+### Out-of-Scope Use
+
+<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
+
+[More Information Needed]
+
+## Bias, Risks, and Limitations
+
+<!-- This section is meant to convey both technical and sociotechnical limitations. -->
+
+[More Information Needed]
+
+### Recommendations
+
+<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
+
+Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
+
+## How to Get Started with the Model
+
+Use the code below to get started with the model.
+
+[More Information Needed]
+
+## Training Details
+
+### Training Data
+
+<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
+
+[More Information Needed]
+
+### Training Procedure
+
+<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
+
+#### Preprocessing [optional]
+
+[More Information Needed]
+
+
+#### Training Hyperparameters
+
+- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
+
+#### Speeds, Sizes, Times [optional]
+
+<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
+
+[More Information Needed]
+
+## Evaluation
+
+<!-- This section describes the evaluation protocols and provides the results. -->
+
+### Testing Data, Factors & Metrics
+
+#### Testing Data
+
+<!-- This should link to a Dataset Card if possible. -->
+
+[More Information Needed]
+
+#### Factors
+
+<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
+
+[More Information Needed]
+
+#### Metrics
+
+<!-- These are the evaluation metrics being used, ideally with a description of why. -->
+
+[More Information Needed]
+
+### Results
+
+[More Information Needed]
+
+#### Summary
+
+
+
+## Model Examination [optional]
+
+<!-- Relevant interpretability work for the model goes here -->
+
+[More Information Needed]
+
+## Environmental Impact
+
+<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
+
+Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
+
+- **Hardware Type:** [More Information Needed]
+- **Hours used:** [More Information Needed]
+- **Cloud Provider:** [More Information Needed]
+- **Compute Region:** [More Information Needed]
+- **Carbon Emitted:** [More Information Needed]
+
+## Technical Specifications [optional]
+
+### Model Architecture and Objective
+
+[More Information Needed]
+
+### Compute Infrastructure
+
+[More Information Needed]
+
+#### Hardware
+
+[More Information Needed]
+
+#### Software
+
+[More Information Needed]
+
+## Citation [optional]
+
+<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
+
+**BibTeX:**
+
+[More Information Needed]
+
+**APA:**
+
+[More Information Needed]
+
+## Glossary [optional]
+
+<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
+
+[More Information Needed]
+
+## More Information [optional]
+
+[More Information Needed]
+
+## Model Card Authors [optional]
+
+[More Information Needed]
+
+## Model Card Contact
+
+[More Information Needed]
+### Framework versions
+
+- PEFT 0.11.1
