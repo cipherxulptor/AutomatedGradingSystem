@@ -63,10 +63,6 @@
     "▁<PRE>",
     "▁<MID>",
     "▁<SUF>",
-    "▁<EOT>",
-    "▁<PRE>",
-    "▁<MID>",
-    "▁<SUF>",
     "▁<EOT>"
   ],
   "bos_token": "<s>",
@@ -75,17 +71,13 @@
   "eot_token": "▁<EOT>",
   "fill_token": "<FILL_ME>",
   "legacy": null,
-  "max_length": 512,
   "middle_token": "▁<MID>",
   "model_max_length": 1000000000000000019884624838656,
   "pad_token": "</s>",
   "prefix_token": "▁<PRE>",
   "sp_model_kwargs": {},
-  "stride": 0,
   "suffix_token": "▁<SUF>",
   "tokenizer_class": "CodeLlamaTokenizer",
-  "truncation_side": "right",
-  "truncation_strategy": "longest_first",
   "unk_token": "<unk>",
   "use_default_system_prompt": false
 }
